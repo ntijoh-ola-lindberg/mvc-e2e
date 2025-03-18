@@ -1,3 +1,5 @@
+require_relative 'models/fruit'
+
 class App < Sinatra::Base
 
     # Funktion för att prata med databasen
@@ -18,7 +20,8 @@ class App < Sinatra::Base
 
     #Routen hämtar alla frukter i databasen
     get '/fruits' do
-      @fruits = db.execute('SELECT * FROM fruits')
+      #@fruits = db.execute('SELECT * FROM fruits')
+      @fruits = Fruit.all();
       p @fruits
       erb(:"fruits/index")
     end
