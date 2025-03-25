@@ -1,4 +1,4 @@
-module Fruit 
+class Fruit 
   
   def self.db
       return @db if @db
@@ -9,7 +9,8 @@ module Fruit
       return @db
   end
 
-  def self.all
+  def self.index
     return db.execute('SELECT * FROM fruits');
   end
+  
 end

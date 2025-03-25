@@ -21,7 +21,7 @@ class App < Sinatra::Base
     #Routen hämtar alla frukter i databasen
     get '/fruits' do
       #@fruits = db.execute('SELECT * FROM fruits')
-      @fruits = Fruit.all();
+      @fruits = Fruit.index();
       p @fruits
       erb(:"fruits/index")
     end
