@@ -1,0 +1,25 @@
+{
+  "name": "mvc-e2e",
+  "version": "1.0.0",
+  "description": "Utgår ifrån fruktsidan",
+  "main": "cypress.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntijoh-ola-lindberg/mvc-e2e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntijoh-ola-lindberg/mvc-e2e/issues"
+  },
+  "homepage": "https://github.com/ntijoh-ola-lindberg/mvc-e2e#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.16"
+  }
+}
